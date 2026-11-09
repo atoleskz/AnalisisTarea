@@ -1,0 +1,23 @@
+Valor analítico: 15 + 3 sen(3) = 15.4233600242
+
+método                                 aproximación            E_t      ε_t (%)     cota |E|
+a) Trapecio (1 aplicación)              15.04503377     3.7833e-01     2.452943   6.7500e+00
+b) Simpson 1/3                          15.43943447    -1.6074e-02     0.104221   2.5313e-01
+c) Simpson 3/8                          15.43028315    -6.9231e-03     0.044887   1.1250e-01
+d) Simpson múltiple, n = 5              15.42126016     2.0999e-03     0.013615   1.1340e-02
+e) Boole                                15.42313868     2.2134e-04     0.001435   3.3901e-03
+f) Punto medio                          15.63663482    -2.1327e-01     1.382804   3.3750e+00
+g) Abierta, 3 segmentos y 2 puntos      15.55869961    -1.3534e-01     0.877497   2.2500e+00
+h) Abierta, 4 segmentos y 3 puntos      15.40887987     1.4480e-02     0.093885   2.2148e-01
+
+Extra: reglas compuestas
+    n error trapecio  error Simpson
+    2     8.2526e-02     1.6074e-02
+    4     2.0034e-02     7.9714e-04
+    8     4.9729e-03     4.7302e-05
+   16     1.2410e-03     2.9192e-06
+   32     3.1012e-04     1.8188e-07
+   64     7.7522e-05     1.1358e-08
+  128     1.9380e-05     7.0976e-10
+Pendientes log-log: trapecio 2.01, Simpson 4.14
+Figura guardada en figuras/P05_newton_cotes.png

@@ -1,0 +1,20 @@
+Acción: AAPL, del 2015-02-17 al 2015-07-10 (101 cierres)
+
+(a) Polinomio de grado 20
+    máximo error |P20(x) - precio| = 1717.3521 USD  en el día 99 (2015-07-09)
+    máximo error en [10, 90]       = 18.3701 USD
+    diferencia Float64 vs BigFloat  = 1.202e-08 USD (redondeo)
+    rango de P20 en [0,100]: [-1597.28, 251.29]  vs. precios en [120.07, 133.00]
+    ¿pasa por los nodos? max |P20(x_i) - y_i| = 0.000e+00
+
+(b) Spline cúbica natural (nodos 0:5:100)
+    máximo error |S(x) - precio| = 3.9388 USD  en el día 99 (2015-07-09)
+    máximo error en [10, 90]     = 3.4844 USD
+    rango de S en [0,100]: [123.28, 132.20]
+    continuidad en nodos: max salto S' = 5.55e-16, max salto S'' = 1.11e-16
+
+(c) Comparación
+                              max error          RMS  max [10,90]
+Polinomio grado 20            1717.3521     283.8968      18.3701
+Spline cúbica natural            3.9388       1.3708       3.4844
+Figura guardada en figuras/P06_splines.png
