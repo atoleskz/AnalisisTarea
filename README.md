@@ -1,6 +1,7 @@
 # Tarea de Análisis Numérico 2027-1: códigos en Julia
 
-Seis problemas resueltos en Julia, sin bibliotecas de integración ni de interpolación.
+Seis problemas resueltos en Julia
+OJO: Sin bibliotecas de integración ni de interpolación.
 
 | Archivo | Problema | Métodos |
 |---|---|---|
